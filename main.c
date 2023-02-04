@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 #include <sqlite3.h>
+
+#include "type_text.h"
 
 int main(int argc, char **argv) {
 
@@ -18,8 +19,9 @@ int main(int argc, char **argv) {
         return -1;
     }
 
-
     printf("<Insert %d Good Question(s) about Women in Stem Here>\n", num_questions);
+
+    display_text("This is a test\n", 10.0f);
 
     return 0;
 
