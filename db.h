@@ -9,6 +9,6 @@ struct db_response {
     char* hints;
 };
 
-struct db_response* get_response();
+struct db_response* get_response(sqlite3 * db);
 
 #endif
