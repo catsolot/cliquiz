@@ -1,0 +1,33 @@
+cliquiz
+- command line quiz
+- timer for each question
+- multiple questions per quiz
+- this is an prompt once the game starts
+    - need a sick ASCII art splash
+
+What do the questions look like:
+- Description that leads into some number of points
+    - lose points as more sentences are revealed
+    - sentences are automatic (combined with timer)
+    - typing out the text?
+
+- Read in answers
+    - do some kind of "fuzzy" matching
+    - answers will be some combination of first and last names
+
+- Info-mode
+    - give the names and information links etc etc interactively or something?
+
+Database stuff
+- populate with data
+- access methods
+
+Tasks:
+1. timer
+2. ASCII art
+3. Fuzzy matching
+4. populate database
+5. connect database to main
+6. typey text
+7. printing hints
+8. input handling 
