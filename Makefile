@@ -5,10 +5,10 @@ CC := gcc
 CFLAGS := -ggdb3 -O0 --std=c99 -Wall -lm -lsqlite3 -lncurses
 
 # add header files here
-HDRS := sqlite3.h type_text.h fuzzy.h
+HDRS := sqlite3.h type_text.h fuzzy.h db.h
 
 # add source files here
-SRCS := main.c type_text.c fuzzy.c
+SRCS := main.c type_text.c fuzzy.c db.c
 
 # generate names of object files
 OBJS := $(SRCS:.c=.o)

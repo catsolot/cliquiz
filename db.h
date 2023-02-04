@@ -5,7 +5,7 @@
 #include <sqlite3.h>
 #include <time.h>
 #include <stdlib.h>
-#define DB_LENGTH 2
+#define DB_LENGTH 3
 
 struct db_response {
     const char* answer;

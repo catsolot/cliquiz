@@ -26,13 +26,3 @@ sqlite3 * init_database(char* filename) {
     return db_ptr;
 }
 
-int main() {
-    sqlite3 * d = init_database("data.db");
-    struct db_response* re = get_response(d);
-    printf("%s\n%s\n%s\n", re->answer, re->question, re->hint);
-    free(re);
-
-    sqlite3_close_v2(d);
-    free(d);
-}
-    

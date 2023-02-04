@@ -19,12 +19,12 @@ int display_question(char* text, double seconds) {
 
     int elapsed;
     for (int i = 0, last = clock(); i < length; elapsed = clock() - last) {
-        if (kbhit()) {
-            printf("Enter key was pressed\n");
-            refresh();
-            return (clock() - beginning);
-        }
-        refresh();
+        //if (kbhit()) {
+        //    printf("Enter key was pressed\n");
+        //    refresh();
+        //    return (clock() - beginning);
+        //}
+        //refresh();
         if (clocks_per_char <= elapsed) {
             putchar(text[i]);
             fflush(stdout);
