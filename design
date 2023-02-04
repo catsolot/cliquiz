@@ -22,6 +22,13 @@ Database stuff
 - populate with data
 - access methods
 
+Methods for database
+- actually return a struct with all the info.
+    - get a random question - send in random
+    - get sequentially hints for each question - no parameter
+    - get answer - needs paramter for name (char*)
+
+
 Tasks:
 1. timer
 2. ASCII art
