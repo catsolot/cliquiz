@@ -6,7 +6,7 @@
 
 int main(int argc, char **argv) {
 
-    if (argc < 2) {
+    if (argc != 2) {
         printf("Usage: %s <Number of Questions>\n", argv[0]);
         return -1;
     }
