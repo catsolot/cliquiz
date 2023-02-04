@@ -2,13 +2,13 @@
 CC := gcc
 
 # set the compiler flags
-CFLAGS := -ggdb3 -O0 --std=c99 -Wall -lm -lsqlite3
+CFLAGS := -ggdb3 -O0 --std=c99 -Wall -lm -lsqlite3 -lncurses
 
 # add header files here
-HDRS := sqlite3.h type_text.h
+HDRS := sqlite3.h type_text.h fuzzy.h
 
 # add source files here
-SRCS := main.c type_text.c
+SRCS := main.c type_text.c fuzzy.c
 
 # generate names of object files
 OBJS := $(SRCS:.c=.o)

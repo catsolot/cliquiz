@@ -4,7 +4,8 @@
 #include <time.h>
 #include <stdio.h>
 #include <string.h>
+#include <ncurses.h>
 
-void display_text(char* text, double seconds);
-
+int display_question(char* text, double seconds);
+int kbhit(void);
 #endif
