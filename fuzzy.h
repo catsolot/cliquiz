@@ -3,6 +3,6 @@
 
 #include <string.h>
 
-int levenshtein(char *s1, char *s2);
+unsigned int levenshtein(const char *s1, const char *s2);
 
 #endif

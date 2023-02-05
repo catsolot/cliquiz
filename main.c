@@ -33,24 +33,30 @@ int main(int argc, char **argv) {
     // Connect to database
     sqlite3* database = init_database("data.db");
 
+    char buf[50];
     struct db_response * response;
+    printf("Welcome to CLIQuiz!\n");
     for (int i = 0; i < num_questions; i++) {
-        char buf[500];
         // get a thing
-        response = get_response(database); 
+        response = get_response(database);
+
         // print the thingy
-        printf("\n");
         display_question(response->question, 2.0);
+
         // get input
         printf("\nAnswer? ");
-        scanf("%s", buf); 
+        scanf("%[^\n]%*c", buf);
+
         // compare 
-        int di = levenshtein(buf, response->answer);
+        printf("You answered: %s\n", buf);
+        printf("The answer actually is: %s\n", response->answer);
+        unsigned int di = levenshtein(buf, response->answer);
+        printf("The difference from your answer is: %d\n", di);
         if (di < 2) {
-            printf("YAYYYY YOU'RE SO SMART O.o");
+            printf("YAYYYY YOU'RE SO SMART O.o\n");
         }
         else {
-            printf("bruh");
+            printf("bruh\n");
         }
     }
 

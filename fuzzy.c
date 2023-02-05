@@ -15,7 +15,7 @@ static int min(int a, int b, int c) {
  * Lifted from WikiBooks:
  * https://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance#C
  */
-int levenshtein(char *s1, char *s2) {
+unsigned int levenshtein(const char *s1, const char *s2) {
     unsigned int x, y, s1len, s2len;
     s1len = strlen(s1);
     s2len = strlen(s2);

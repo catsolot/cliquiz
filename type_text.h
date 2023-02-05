@@ -6,6 +6,6 @@
 #include <string.h>
 #include <ncurses.h>
 
-int display_question(char* text, double seconds);
+int display_question(const char* text, double seconds);
 int kbhit(void);
 #endif

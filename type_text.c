@@ -11,7 +11,7 @@ int kbhit() {
     }
 }
 
-int display_question(char* text, double seconds) {
+int display_question(const char* text, double seconds) {
     int length = strlen(text);
     int clocks_per_char = ( seconds / length ) * CLOCKS_PER_SEC;
 
