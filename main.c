@@ -29,6 +29,9 @@ int main(int argc, char **argv) {
         return -1;
     }
 
+    // Score keeping
+    int correct = 0;
+    double percentage;
 
     // Connect to database
     sqlite3* database = init_database("data.db");
@@ -54,22 +57,14 @@ int main(int argc, char **argv) {
         printf("The difference from your answer is: %d\n", di);
         if (di < 2) {
             printf("YAYYYY YOU'RE SO SMART O.o\n");
+            correct++;
         }
         else {
             printf("bruh\n");
         }
+
     }
 
-            
-
-    //printf("<Insert %d Good Question(s) about Women in Stem Here>\n", num_questions);
-
-
-    //display_question("What is the name of the first programmer?\n", 10.0f);
-
-    //char* base = "Ada Lovelace\0";
-    //char* comp = "Lovelace\0";
-
-    //printf("The difference between %s and %s is %d\n", base, comp, levenshtein(base, comp));
+    printf("You're final score was %d/%d, or %3.2f%% correct.\n", correct, num_questions, 100 * (double) correct / (double) num_questions);
     return 0;
 }
