@@ -65,6 +65,6 @@ int main(int argc, char **argv) {
 
     }
 
-    printf("You're final score was %d/%d, or %3.2f%% correct.\n", correct, num_questions, 100 * (double) correct / (double) num_questions);
+    printf("Your final score was %d/%d, or %3.2f%% correct.\n", correct, num_questions, 100 * (double) correct / (double) num_questions);
     return 0;
 }
